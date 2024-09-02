@@ -41,13 +41,13 @@ class OrdersSeeder extends Seeder
 
         $ordersPayload = [
             [
-                'id' => "category-" . Str::random(16),
+                'id' => "orders-" . Str::random(16),
                 'user_id' => $user1->id,
                 'total_amount' => $this->_calculateTotalAmount($allOrderItemUser1),
                 'status' => $statusEnum[0],
             ],
             [
-                'id' => "category-" . Str::random(16),
+                'id' => "orders-" . Str::random(16),
                 'user_id' => $user2->id,
                 'total_amount' => $this->_calculateTotalAmount($allOrderItemUser2),
                 'status' => $statusEnum[0],
